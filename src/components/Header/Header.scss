@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  height: 8rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+
+  @media screen and (max-width: 76.8rem) {
+    padding: 0 5rem;
+  }
+}

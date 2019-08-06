@@ -1,0 +1,13 @@
+.result {
+  &__text {
+    max-width: 90rem;
+    color: #000000;
+    font-size: 4.4rem;
+    font-weight: 600;
+    line-height: 1.9;
+
+    @media screen and (max-width: 40rem) {
+      font-size: 3.6rem;
+    }
+  }
+}

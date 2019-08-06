@@ -1,15 +1,18 @@
-/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
-import './App.scss';
+import Header from 'components/Header/Header';
+import  Footer from 'components/Footer/Footer';
+import Content from 'components/Content/Content'
+import Select from 'components/Select/Select'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Hi, I am Shovan - The developer</h1>
-          <h2>Let's Code</h2>
-        </header>
+      <div className="container">
+        <Header />
+        <Content>
+          <Select />
+        </Content>
+        <Footer />
       </div>
     );
   }
