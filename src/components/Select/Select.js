@@ -1,15 +1,21 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import './Select.scss'
+import { withRouter } from 'react-router-dom';
+import './Select.scss';
+import Content from 'components/Content/Content';
+import MenuButton from 'components/MenuButton/index';
 
-export const Select = () => (
-  <div className="select-container">
-    <button className="select-button">gratitude</button>
-    <button className="select-button">dreams</button>
-    <button className="select-button">discovery</button>
-    <button className="select-button">fun</button>
-    <button className="select-button">creativity</button>
-    <button className="select-button">life</button>
-  </div>
+const Select = ({ history }) => (
+  <Content title="Get a prompt">
+    <div className="select-container">
+      <MenuButton title="gratitude" promptId="gratitude" history={history} />
+      <MenuButton title="dreams" promptId="dreams" history={history} />
+      <MenuButton title="discovery" promptId="discovery" history={history} />
+      <MenuButton title="fun" promptId="fun" history={history} />
+      <MenuButton title="creativity" promptId="creativity" history={history} />
+      <MenuButton title="life" promptId="life" history={history} />
+    </div>
+  </Content>
 );
 
-export default Select;
+export default withRouter(Select);

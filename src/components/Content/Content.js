@@ -1,10 +1,10 @@
 import React from 'react';
 import './Content.scss';
 
-export const Content = props => (
+export const Content = ({ title, children }) => (
   <main className="content">
-    <h1 className="content__heading">Get a prompt</h1>
-    {props.children}
+    <h1 className="content__heading">{title}</h1>
+    {children}
   </main>
 );
 
