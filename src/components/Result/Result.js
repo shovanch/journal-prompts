@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 import './Result.scss';
 import Content from 'components/Content/Content';
@@ -47,10 +48,15 @@ class Result extends Component {
           <Loading />
         ) : (
           <div className="result">
-            <h2 className="result__text">
-              {prompt}
-              <button onClick={() => this.getPrompt()}>CLICK</button>
-            </h2>
+            <h2 className="result__text">{prompt}</h2>
+            <div className="button-container">
+              <Link className="button" to="/">
+                go to home
+              </Link>
+              <button type="button" className="button" onClick={this.getPrompt}>
+                get another
+              </button>
+            </div>
           </div>
         )}
       </Content>

@@ -10,7 +10,7 @@ const Select = ({ history }) => (
     <div className="select-container">
       <MenuButton title="gratitude" promptId="gratitude" history={history} />
       <MenuButton title="dreams" promptId="dreams" history={history} />
-      <MenuButton title="discovery" promptId="discovery" history={history} />
+      <MenuButton title="self-discovery" promptId="self-discovery" history={history} />
       <MenuButton title="fun" promptId="fun" history={history} />
       <MenuButton title="creativity" promptId="creativity" history={history} />
       <MenuButton title="life" promptId="life" history={history} />
