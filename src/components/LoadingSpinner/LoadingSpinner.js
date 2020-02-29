@@ -1,7 +1,7 @@
-import React from 'react';
-import './Loading.scss';
+import React from "react";
+import "./LoadingSpinner.scss";
 
-const Loading = () => (
+const LoadingSpinner = () => (
   <div className="container">
     <div className="spinner">
       <div className="dot1" />
@@ -10,4 +10,4 @@ const Loading = () => (
   </div>
 );
 
-export default Loading;
+export default LoadingSpinner;

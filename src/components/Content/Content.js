@@ -1,5 +1,5 @@
-import React from 'react';
-import './Content.scss';
+import React from "react";
+import "./Content.scss";
 
 const Content = ({ title, children }) => (
   <main className="content">

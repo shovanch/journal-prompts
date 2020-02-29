@@ -1,10 +1,10 @@
-import React from 'react';
-import './Footer.scss';
-import Github from 'assets/images/github.svg';
-import LinkedIn from 'assets/images/linkedin.svg';
-import Twitter from 'assets/images/twitter.svg';
+import React from "react";
+import "./Footer.scss";
+import Github from "assets/images/github.svg";
+import LinkedIn from "assets/images/linkedin.svg";
+import Twitter from "assets/images/twitter.svg";
 
-export const Footer = () => (
+const Footer = () => (
   <footer className="footer">
     <p>Developed by Shovan Chatterjee</p>
     <div className="footer__icons">

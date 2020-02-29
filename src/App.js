@@ -1,10 +1,10 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
-import Select from 'components/Select/Select';
-import Result from 'components/Result/Result';
+import Header from "components/Header/Header";
+import Footer from "components/Footer/Footer";
+import Select from "components/Select/Select";
+import Result from "components/Result/Result";
 
 const App = () => (
   <BrowserRouter>
@@ -12,15 +12,7 @@ const App = () => (
       <Header />
       <Switch>
         <Route path="/" component={Select} exact />
-
-        <Route
-          path="/:promptId"
-          // render={props => (
-          //   <Result {...props} prompts={prompts} isLoading={isLoading} />
-          // )}
-          component={Result}
-          exact
-        />
+        <Route path="/:promptId" component={Result} exact />
       </Switch>
       <Footer />
     </div>

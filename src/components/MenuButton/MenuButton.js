@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const MenuButton = ({ promptId, title, history }) => (
   <button
